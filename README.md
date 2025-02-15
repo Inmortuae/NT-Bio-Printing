@@ -36,6 +36,8 @@ Welcome to NT Organ Printer, a mod for Barotrauma that enhances the medical mech
 ## Building the Organ Printer
 
 ### Construction Requirements
+- **Repairs**:
+  - Requires Heavy Wrench to repair
 - **Materials**:
   - Silicon, Copper, and Fulgurium for electronic components
   - FPGA Circuits for biological printing algorithms
