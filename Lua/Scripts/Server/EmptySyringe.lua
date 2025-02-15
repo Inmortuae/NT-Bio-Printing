@@ -8,10 +8,15 @@ Hook.Add("empty_syringe_bone.onUse", function(effect, deltaTime, item, targets, 
     -- Check if target is either Human or Humanhusk
     if targetType == "Human" then
         if HF.GetSkillRequirementMet(char, "medical", 50) then
-            if HF.HasAfflictionLimb(target, "drilledbones", LimbType.Torso, 1) then
-                HF.GiveItem(char, "bone_marrow")
-                HF.AddAfflictionLimb(target, "bonedamage", LimbType.Torso, 25, char) -- Bone damage from harvest
+            for _, limb in pairs(LimbType) do
+                if HF.HasAfflictionLimb(target, "drilledbones", limb, 1) then
+                    if HF.HasAfflictionLimb(target, "bonemarrowextracted", limb, 100) then return else
+                    HF.AddAfflictionLimb(target, "bonemarrowextracted", limb, 10, char) -- Bone damage from harvest
+                    end
+                end
             end
+            HF.GiveItem(char, "bone_marrow")
+            HF.RemoveItem(item)
         else
             -- Failed attempt consequences
             HF.AddAfflictionLimb(target, "severepain", LimbType.Torso, 40, char) -- Excruciating pain

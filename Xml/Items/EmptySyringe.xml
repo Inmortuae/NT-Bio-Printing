@@ -20,29 +20,16 @@
     <Sprite texture="%ModDir%/Xml/Items/EmptySyringe.png" sourcerect="11,-2,40,70" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
-      <RequiredSkill identifier="medical" level="50" />
-      <StatusEffect type="OnSuccess" target="This" Condition="-100.0" setvalue="true" />
-      <StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true" />
+      <RequiredSkill identifier="medical" level="0" />
       <StatusEffect tags="medical" type="OnSuccess" target="UseTarget">
-        <LuaHook name="empty_syringe_bone.onUse" />
-      </StatusEffect>
-      <StatusEffect tags="medical" type="OnFailure" target="UseTarget">
         <LuaHook name="empty_syringe_bone.onUse" />
       </StatusEffect>
       <StatusEffect type="OnSuccess" target="UseTarget">
         <Conditional entitytype="eq Character" />
         <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
       </StatusEffect>
-      <StatusEffect type="OnFailure" target="UseTarget">
-        <Conditional entitytype="eq Character" />
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
-      </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true" AllowWhenBroken="true">
         <Affliction identifier="stun" amount="0.1" />
-      </StatusEffect>
-      <!-- Remove the item when fully used -->
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
       </StatusEffect>
     </MeleeWeapon>
     <Projectile characterusable="false" launchimpulse="18.0" sticktocharacters="true" launchrotation="-90" inheritstatuseffectsfrom="MeleeWeapon" inheritrequiredskillsfrom="MeleeWeapon" />

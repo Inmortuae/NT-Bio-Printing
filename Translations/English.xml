@@ -13,4 +13,7 @@
   <!-- /// Machines /// !-->
   <entityname.organprinter>Organ Printer</entityname.organprinter>
   <entitydescription.organprinter>A specialized fabricator designed for printing biological organs.</entitydescription.organprinter>
+  <!-- /// Afflictions /// !-->
+  <afflictionname.bonemarrowextracted>Bone Marrow Extracted</afflictionname.bonemarrowextracted>
+  <afflictiondescription.bonemarrowextracted>The patient's bone marrow has been extracted.</afflictiondescription.bonemarrowextracted>
 </infotexts>
