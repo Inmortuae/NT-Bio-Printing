@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="NT Organ Printer" modversion="1.0.0" corepackage="False" gameversion="1.7.7.0" expectedhash="6EF3800A7E2061F50386B9CBD80C251D">
+  <Other file="%ModDir%/NTimg/InGameItemIconAtlas.png" />
+  <Other file="%ModDir%/Lua/Autorun/init.lua" />
+  <Item file="%ModDir%/Xml/Printer/organprinter.xml" />
+  <Item file="%ModDir%/Xml/Items/EmptySyringe.xml" />
+  <Item file="%ModDir%/Xml/Items/BoneMarrow.xml" />
+  <Item file="%ModDir%/Xml/Items/StemCell.xml" />
+  <Item file="%ModDir%/Xml/Items/BioMat.xml" />
+  <Text file="%ModDir%/Translations/English.xml" />
+  <Other file="%ModDir%/Lua/Scripts/Server/EmptySyringe.lua" />
+  <Other file="%ModDir%/Lua/Scripts/configdata.lua" />
+  <Item file="%ModDir%/Xml/Printer/organroverride.xml" />
+</contentpackage>
