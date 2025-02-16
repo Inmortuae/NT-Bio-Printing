@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Item name="" identifier="organprinter" tags="organprinter,donttakeitems,dontsellitems" category="Machine" linkable="true" allowedlinks="deconstructor,medcabinet,locker,toxcontainer" scale="0.2" description="" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
+<Item name="" identifier="organprinter" tags="organprinter,donttakeitems,dontsellitems" category="Machine" linkable="true" allowedlinks="deconstructor,medcabinet,locker,toxcontainer" scale="0.4" description="" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
   <Upgrade gameversion="0.10.4.0">
     <Repairable Msg="ItemMsgRepairWrench" />
   </Upgrade>
@@ -12,16 +12,16 @@
     <RequiredItem identifier="fpgacircuit" amount="6" />
   </Fabricate>
   <UpgradePreviewSprite scale="2.5" texture="Content/UI/WeaponUI.png" sourcerect="256,960,64,64" origin="0.5,0.45" />
-  <Sprite texture="%ModDir%/Xml/Printer/organprinter.png" depth="0.8" sourcerect="0,0,336,288" origin="0.5,0.5" />
-  <BrokenSprite texture="%ModDir%/Xml/Printer/organprinter.png" sourcerect="336,0,336,288" origin="0.5,0.5" depth="0.8" maxcondition="80" fadein="true" />
-  <BrokenSprite texture="%ModDir%/Xml/Printer/organprinter.png" sourcerect="672,0,336,288" origin="0.5,0.5" depth="0.8" maxcondition="0" />
+  <Sprite texture="%ModDir%/Xml/Machines/organprinter.png" depth="0.8" sourcerect="1,0,295,105" origin="0.5,0.5" />
+  <BrokenSprite texture="%ModDir%/Xml/Machines/organprinter.png" sourcerect="337,0,295,105" origin="0.5,0.5" depth="0.8" maxcondition="80" fadein="true" />
+  <BrokenSprite texture="%ModDir%/Xml/Machines/organprinter.png" sourcerect="673,0,295,105" origin="0.5,0.5" depth="0.8" maxcondition="0" />
   <Body width="94" height="221" density="20" />
   <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" msg="ItemMsgDetachWrench" PickingTime="10.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="false">
     <RequiredItem identifier="wrench" type="Equipped" />
     <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.5" setvalue="true" />
   </Holdable>
   <LightComponent range="10.0" lightcolor="200,255,200,0" powerconsumption="5" IsOn="true" castshadows="false" alphablend="false" allowingameediting="false">
-    <sprite texture="Content/Items/Command/navigatorLights.png" depth="0.025" sourcerect="688,339,336,288" alpha="1.0" />
+    <sprite texture="%ModDir%/Xml/Machines/machinelights.png" depth="0.025" sourcerect="79,18,316,119" alpha="1.0" origin="0.5,0.5" />
   </LightComponent>
   <Fabricator canbeselected="true" powerconsumption="500.0" msg="ItemMsgInteractSelect">
     <GuiFrame relativesize="0.4,0.45" style="ItemUI" anchor="Center" />
@@ -58,6 +58,12 @@
       <Affliction identifier="stun" strength="4" />
     </StatusEffect>
   </Repairable>
-  <ItemContainer capacity="5" canbeselected="true" hideitems="true" slotsperrow="5" uilabel="Biomaterials" allowuioverlap="true" />
-  <ItemContainer capacity="1" canbeselected="true" hideitems="true" slotsperrow="1" uilabel="Output" allowuioverlap="true" />
+  <ItemContainer capacity="5" canbeselected="true" hideitems="true" slotsperrow="5" uilabel="Input" allowuioverlap="true">
+    <StatusEffect type="OnContained" target="This" setvalue="true" drawinventory="false" />
+    <StatusEffect type="OnNotContained" target="This" setvalue="true" drawinventory="true" />
+  </ItemContainer>
+  <ItemContainer capacity="1" canbeselected="true" hideitems="true" slotsperrow="1" uilabel="Output" allowuioverlap="true">
+    <StatusEffect type="OnContained" target="This" setvalue="true" drawinventory="false" />
+    <StatusEffect type="OnNotContained" target="This" setvalue="true" drawinventory="true" />
+  </ItemContainer>
 </Item>

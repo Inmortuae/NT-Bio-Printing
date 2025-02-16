@@ -13,6 +13,8 @@
   <!-- /// Machines /// !-->
   <entityname.organprinter>Organ Printer</entityname.organprinter>
   <entitydescription.organprinter>A specialized fabricator designed for printing biological organs.</entitydescription.organprinter>
+  <entityname.stemcellprocessor>Stem Cell Processor</entityname.stemcellprocessor>
+  <entitydescription.stemcellprocessor>A specialized fabricator designed for synthesising Stem Cells.</entitydescription.stemcellprocessor>
   <!-- /// Afflictions /// !-->
   <afflictionname.bonemarrowextracted>Bone Marrow Extracted</afflictionname.bonemarrowextracted>
   <afflictiondescription.bonemarrowextracted>The patient's bone marrow has been extracted.</afflictiondescription.bonemarrowextracted>
