@@ -4,21 +4,16 @@ Hook.Add("empty_syringe_bone.onUse", function(effect, deltaTime, item, targets, 
     local target = targets[1]
     local char = effect.user
     local targetType = tostring(target)
-    local itemGiven = false -- Flag to track if an item has been given
 
     -- Check if target is either Human or Humanhusk
     if targetType == "Human" then
         if HF.GetSkillRequirementMet(char, "medical", 50) then
             for _, limb in pairs(LimbType) do
-                if HF.HasAfflictionLimb(target, "drilledbones", limb, 100) and not HF.HasAfflictionLimb(target, "bonemarrowextracted", limb, 100) then
-                    if not itemGiven then  -- Ensure only one item is given
-                        HF.AddAfflictionLimb(target, "bonemarrowextracted", limb, 10, char) -- Bone damage from harvest
-                        HF.GiveItem(char, "bone_marrow")
-                        HF.RemoveItem(item)
-                        itemGiven = true -- Set flag to true to prevent further items being given
-                    end
-                else
-                    return
+                if HF.HasAfflictionLimb(target, "drilledbones", limb, 1) and not HF.HasAfflictionLimb(target, "bonemarrowextracted", limb, 100) then
+                    HF.AddAfflictionLimb(target, "bonemarrowextracted", limb, 20, char) -- Bone damage from harvest
+                    HF.GiveItem(char, "bone_marrow")
+                    HF.RemoveItem(item)
+                    return -- Ensures only one item is given
                 end
             end
         else
