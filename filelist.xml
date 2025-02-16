@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="NT Organ Printer" modversion="1.0.0" corepackage="False" gameversion="1.7.7.0">
+<contentpackage name="NT Bio Printer" modversion="1.0.0" corepackage="False" steamworkshopid="3427699694" gameversion="1.7.7.0">
   <Other file="%ModDir%/NTimg/InGameItemIconAtlas.png" />
   <Other file="%ModDir%/NTimg/limbs.png" />
   <Other file="%ModDir%/Lua/Autorun/init.lua" />

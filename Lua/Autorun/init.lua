@@ -1,6 +1,6 @@
 
 NTOP = {} -- Neurotrauma Organ Printer
-NTOP.Name="NT Organ Printer"
+NTOP.Name="NT Bio Printer"
 NTOP.Version = "A1.0.1"
 NTOP.VersionNum = 01000602
 NTOP.MinNTVersion = "A1.9.0"
@@ -13,7 +13,7 @@ if (Game.IsMultiplayer and SERVER) or not Game.IsMultiplayer then
 
     Timer.Wait(function()
         if NTC == nil then
-            print("Error loading NT Organ Printer: It appears Neurotrauma isn't loaded!")
+            print("Error loading NT Bio Printer: It appears Neurotrauma isn't loaded!")
             return
         end
         dofile(NTOP.Path .. "/Lua/Scripts/Server/EmptySyringe.lua")
