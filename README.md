@@ -1,70 +1,33 @@
-# NT Organ Printer
+# NT Bio Printer - Cutting-Edge Bioprinting for Barotrauma
 
-Welcome to NT Organ Printer, a mod for Barotrauma that enhances the medical mechanics by introducing advanced bioprinting technology.
+Take submarine medicine to the next level with **NT Bio Printer**, introducing advanced **bioprinting** and **stem cell synthesis** for life-saving **organ and limb fabrication**.
 
-## Features
+## New Machines
 
-- **Organ Printer**: A high-tech medical fabricator for creating functional human organs.
-- **Bone Marrow Extraction**: Perform surgery to extract marrow for stem cell synthesis from **any limb**.
-- **Stem Cell Culturing**: Combine with genetic material to create biological material.
-- **Organ Fabrication**: Use biological material and Thiamine to produce transplantable organs.
-- **Medical Skill Dependency**: More complex organs require higher medical expertise to fabricate.
-- **Surgical Integration**: Printed organs must be surgically implanted following Neurotrauma’s medical procedures.
-- **Bone Marrow Affliction**: Excessive marrow extraction can lead to bone death.
+- **Bio Printer** – A high-tech fabricator that creates **functional human organs and limbs** from biological materials.
+- **Stem Cell Processor** – Converts **bone marrow** and other materials into **stem cells** for further bioprinting.
 
-## Crafting
+## Core Features
 
-### Basic Organ Printing
+- **Organ & Limb Printing:** Use the Bio Printer to craft **transplantable organs and fully functional limbs** with a mix of **stem cells, biological material, and Thiamine or Calcium**.
+- **Bone Marrow Extraction:** Harvest **bone marrow** using syringes, but be cautious—**excessive extraction can lead to bone damage**. Bone marrow can only be extracted from **drilled bones**, ensuring a realistic and immersive medical process.
+- **Stem Cell Synthesis:** Process bone marrow into **stem cells** for use in advanced medical procedures.
+- **Limb Replacement:** Printed **arms and legs** can be surgically attached to patients, restoring lost functionality.
+- **Surgical Integration:** All printed body parts must be surgically implanted following **Neurotrauma’s** medical guidelines.
+- **Skill-Based Mechanics:** Printing complex body parts requires **higher medical skill levels**.
+- **Afflictions & Side Effects:** Bone marrow extraction can cause **pain, fractures, and internal bleeding** if done improperly.
 
-- **Ingredients**:
-  - Biological Material
-  - Thiamine
-- **Requirements**: Medical skill varies by organ type
-- **Crafting Time**: 45-90 seconds
+## New Medical Items
 
-### Advanced Organ Printing
+- **Bone Marrow Syringe** – A syringe filled with extracted **bone marrow**, a key ingredient for stem cell production.
+- **Stem Cell Syringe** – Vital for **biological material synthesis** in the Bio Printer.
+- **Biological Material Syringe** – The building block of all **printed organs and limbs**.
 
-- **Ingredients**:
-  - Stem Cells
-  - Biological Material
-  - Thiamine
-- **Requirements**: High Medical skill
-- **Crafting Time**: 120 seconds
+Master the art of **bioprinting and regenerative medicine**, revolutionizing the way submariners survive in the abyss.
 
-### Bone Marrow Extraction
+## Links
 
-- **Requirements**:
-  - Perform surgery to **drill bones in any limb (arms, legs, torso)**
-  - Extract marrow with an empty syringe
-- **Effects**:
-  - Partial extraction allows marrow to regenerate over time.
-  - Full extraction **prevents regeneration**, leading to **Bone Death**, causing severe debilitation or fatal complications in the affected limb.
-
-## Building the Organ Printer
-
-### Construction Requirements
-
-- **Repairs**:
-  - Requires Heavy Wrench to repair
-- **Materials**:
-  - Silicon, Copper, and Fulgurium for electronic components
-  - FPGA Circuits for biological printing algorithms
-- **Skills Required**:
-  - Advanced Electrical and Mechanical skills
-
-## Configuration Options
-
-- **TBD**:
-
-## Installation
-
-To install the mod, visit the [Steam Workshop page](https://steamcommunity.com/sharedfiles/filedetails/?id=3427699694) and subscribe to the mod.
-
-## License
-
-MIT License
-
-Permission is granted, free of charge, to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of this software, subject to the following conditions:
-
-The software is provided "as is", without warranty of any kind, express or implied.
+- **[Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3429100373)**
+- **Check out my other mod for more end-game medical content that also works with NT!**  
+  - **[Undead's Medical](https://steamcommunity.com/sharedfiles/filedetails/?id=3275278739)**
 
