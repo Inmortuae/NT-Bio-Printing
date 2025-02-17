@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
   <Item name="" description="" identifier="biological_material" category="Medical" maxstacksize="4" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
-    <Fabricate suitablefabricators="organprinter" requiredtime="35">
+    <Fabricate suitablefabricators="bioprinter" requiredtime="35">
       <RequiredSkill identifier="medical" level="65" />
       <RequiredItem identifier="stem_cells" amount="2" />
       <RequiredItem tag="bio_core" amount="1" />

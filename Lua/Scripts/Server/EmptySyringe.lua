@@ -13,7 +13,8 @@ Hook.Add("empty_syringe_bone.onUse", function(effect, deltaTime, item, targets, 
                     HF.AddAfflictionLimb(target, "bonemarrowextracted", limb, 20, char) -- Bone damage from harvest
                     HF.GiveItem(char, "bone_marrow")
                     HF.RemoveItem(item)
-                    return -- Ensures only one item is given
+                    print("Bone marrow extracted from limb")
+                    break -- Ensures only one item is given
                 end
             end
         else

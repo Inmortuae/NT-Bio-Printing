@@ -11,8 +11,8 @@
   <entityname.biological_material>Biological Material Syringe</entityname.biological_material>
   <entitydescription.biological_material>A syringe full of Biological Material.</entitydescription.biological_material>
   <!-- /// Machines /// !-->
-  <entityname.organprinter>Bio Printer</entityname.organprinter>
-  <entitydescription.organprinter>A specialized fabricator designed for printing biological organs.</entitydescription.organprinter>
+  <entityname.bioprinter>Bio Printer</entityname.bioprinter>
+  <entitydescription.bioprinter>A specialized fabricator designed for printing biological organs.</entitydescription.bioprinter>
   <entityname.stemcellprocessor>Stem Cell Processor</entityname.stemcellprocessor>
   <entitydescription.stemcellprocessor>A specialized fabricator designed for synthesising Stem Cells.</entitydescription.stemcellprocessor>
   <!-- /// Afflictions /// !-->

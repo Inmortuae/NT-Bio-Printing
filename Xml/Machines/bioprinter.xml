@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Item name="" identifier="organprinter" tags="organprinter,donttakeitems,dontsellitems" category="Machine" linkable="true" allowedlinks="deconstructor,medcabinet,locker,toxcontainer" scale="0.4" description="" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
+<Item name="" identifier="bioprinter" tags="bioprinter,donttakeitems,dontsellitems" category="Machine" linkable="true" allowedlinks="deconstructor,medcabinet,locker,toxcontainer" scale="0.4" description="" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
   <Upgrade gameversion="0.10.4.0">
     <Repairable Msg="ItemMsgRepairWrench" />
   </Upgrade>
-  <Fabricate suitablefabricators="fabricator" requiredtime="10">
+  <Fabricate suitablefabricators="medicalfabricator" requiredtime="10">
     <RequiredSkill identifier="electrical" level="65" />
     <RequiredSkill identifier="mechanical" level="50" />
     <RequiredItem identifier="silicon" amount="2" />
@@ -12,12 +12,12 @@
     <RequiredItem identifier="fpgacircuit" amount="6" />
   </Fabricate>
   <UpgradePreviewSprite scale="2.5" texture="Content/UI/WeaponUI.png" sourcerect="256,960,64,64" origin="0.5,0.45" />
-  <Sprite texture="%ModDir%/Xml/Machines/organprinter.png" depth="0.8" sourcerect="1,0,295,105" origin="0.5,0.5" />
-  <BrokenSprite texture="%ModDir%/Xml/Machines/organprinter.png" sourcerect="337,0,295,105" origin="0.5,0.5" depth="0.8" maxcondition="80" fadein="true" />
-  <BrokenSprite texture="%ModDir%/Xml/Machines/organprinter.png" sourcerect="673,0,295,105" origin="0.5,0.5" depth="0.8" maxcondition="0" />
+  <Sprite texture="%ModDir%/Xml/Machines/bioprinter.png" depth="0.8" sourcerect="1,0,295,105" origin="0.5,0.5" />
+  <BrokenSprite texture="%ModDir%/Xml/Machines/bioprinter.png" sourcerect="337,0,295,105" origin="0.5,0.5" depth="0.8" maxcondition="80" fadein="true" />
+  <BrokenSprite texture="%ModDir%/Xml/Machines/bioprinter.png" sourcerect="673,0,295,105" origin="0.5,0.5" depth="0.8" maxcondition="0" />
   <Body width="94" height="221" density="20" />
   <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" msg="ItemMsgDetachWrench" PickingTime="10.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="false">
-    <RequiredItem identifier="wrench" type="Equipped" />
+    <RequiredItem identifier="heavywrench" type="Equipped" />
     <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.5" setvalue="true" />
   </Holdable>
   <LightComponent range="10.0" lightcolor="200,255,200,0" powerconsumption="5" IsOn="true" castshadows="false" alphablend="false" allowingameediting="false">
@@ -48,7 +48,7 @@
   <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.50" mindeteriorationdelay="60" maxdeteriorationdelay="120" RepairThreshold="80" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
     <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
     <RequiredSkill identifier="mechanical" level="55" />
-    <RequiredItem items="heavywrench" type="equipped" />
+    <RequiredItem items="wrench" type="equipped" />
     <ParticleEmitter particle="damagebubbles" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemax="360" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
     <ParticleEmitter particle="smoke" particlespersecond="2" scalemin="1" scalemax="2.5" anglemax="360" velocitymin="-50" velocitymax="50" mincondition="15.0" maxcondition="50.0" />
     <ParticleEmitter particle="heavysmoke" particlespersecond="2" scalemin="1.0" scalemax="2.5" anglemax="360" distancemax="60" mincondition="0.0" maxcondition="15.0" />

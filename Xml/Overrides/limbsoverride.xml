@@ -5,7 +5,7 @@
       <InventoryIcon texture="%ModDir%/NTimg/limbs.png" sourcerect="0,0,46,90" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/NTimg/limbs.png" sourcerect="0,0,46,90" depth="0.6" origin="0.5,0.5" />
       <Body width="46" height="90" density="20" />
-      <Fabricate suitablefabricators="organprinter" requiredtime="65">
+      <Fabricate suitablefabricators="bioprinter" requiredtime="65">
           <RequiredSkill identifier="medical" level="60" />
           <RequiredItem identifier="biological_material" amount="5" />
           <RequiredItem identifier="calcium" amount="2" />
@@ -41,7 +41,7 @@
       <InventoryIcon texture="%ModDir%/NTimg/limbs.png" sourcerect="0,0,46,90" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/NTimg/limbs.png" sourcerect="0,0,46,90" depth="0.6" origin="0.5,0.5" />
       <Body width="46" height="90" density="20" />
-      <Fabricate suitablefabricators="organprinter" requiredtime="65">
+      <Fabricate suitablefabricators="bioprinter" requiredtime="65">
           <RequiredSkill identifier="medical" level="60" />
           <RequiredItem identifier="biological_material" amount="5" />
           <RequiredItem identifier="calcium" amount="2" />
@@ -77,7 +77,7 @@
       <InventoryIcon texture="%ModDir%/NTimg/limbs.png" sourcerect="57,0,60,90" origin="0.5,0.5" />
       <Body width="60" height="90" density="20" />
       <Sprite texture="%ModDir%/NTimg/limbs.png" sourcerect="57,0,60,90" depth="0.6" origin="0.5,0.5" />
-      <Fabricate suitablefabricators="organprinter" requiredtime="65">
+      <Fabricate suitablefabricators="bioprinter" requiredtime="65">
           <RequiredSkill identifier="medical" level="60" />
           <RequiredItem identifier="biological_material" amount="5" />
           <RequiredItem identifier="calcium" amount="2" />
@@ -113,7 +113,7 @@
       <InventoryIcon texture="%ModDir%/NTimg/limbs.png" sourcerect="57,0,60,90" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/NTimg/limbs.png" sourcerect="57,0,60,90" depth="0.6" origin="0.5,0.5" />
       <Body width="60" height="90" density="20" />
-      <Fabricate suitablefabricators="organprinter" requiredtime="65">
+      <Fabricate suitablefabricators="bioprinter" requiredtime="65">
           <RequiredSkill identifier="medical" level="60" />
           <RequiredItem identifier="biological_material" amount="5" />
           <RequiredItem identifier="calcium" amount="2" />
