@@ -1,7 +1,7 @@
 
 NTOP = {} -- Neurotrauma Organ Printer
 NTOP.Name="NT Bio Printer"
-NTOP.Version = "A1.0.1"
+NTOP.Version = "A1.0.2"
 NTOP.VersionNum = 01000602
 NTOP.MinNTVersion = "A1.9.0"
 NTOP.MinNTVersionNum = 01090000

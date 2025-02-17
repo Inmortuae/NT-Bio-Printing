@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <Item name="" description="" identifier="empty_syringe_bone" category="Medical" maxstacksize="1" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+  <Item name="" description="" identifier="empty_syringe_bone" category="Medical" maxstacksize="4" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
     <Price baseprice="40" minavailable="1">
       <Price storeidentifier="merchantresearch" />
       <Price storeidentifier="merchantmedical" multiplier="0.9" />
